@@ -1,0 +1,99 @@
+.LOGO_IMG{
+    width: 100px;
+}
+.bg_red{
+    background-color: #b11313 !important;
+}
+.text_red{
+    color: #b11313 !important;
+}
+
+.line_height{
+    line-height: 35px;
+    font-family: "Lora", Georgia, serif !important;
+}
+.fs_25{
+    font-size: 25px;
+}
+.fs_40{
+    font-size: 40px !important;
+}
+.font_weight{
+    font-family: "Lora", Georgia, serif;
+    font-weight: 600;
+    text-align: center;
+}
+.icon{
+    color: #b11313 !important;
+}
+.ftco-footer-social li a:hover{
+    background-color: #b11313;
+}
+.ftco-footer-social li a:hover .icon{
+    color: #ffffff !important;
+}
+.slider-item{
+    opacity: 0.8 !important;
+}
+.home-slider{
+    background-color: black !important;
+
+}
+ .hero-bread{
+    opacity: 0.8 !important;
+}
+.bg-color{
+    background-color: black !important;
+
+}
+.block-20{
+    background-position: center;
+    background-size: cover;
+}
+.ftco-footer{
+    text-align: center;
+}
+.ftco-footer_font{
+    font-family: "Lora", Georgia, serif !important;
+    font-size: 20px !important;
+    text-align: center;
+    border-bottom: 2px solid red 30px;
+    /* width: 30px; */
+    border-Width: 1px 5px
+}
+.ftco-footer_Left{
+    text-align: left;
+}
+
+
+h2 { color: #666;display:inline-block; margin:0;text-transform:uppercase; }
+h2:after {
+  display:block;
+  content: '';
+  border-bottom: solid 3px #b11313;  
+  transform: scaleX(0);  
+  transition: transform 250ms ease-in-out;
+}
+h2:hover:after { transform: scaleX(1); }
+h2.fromRight:after{ transform-origin:100% 50%; }
+h2.fromLeft:after{  transform-origin:  0% 50%; }
+
+
+.hover_border_bottom { color: #b11313;display:inline-block; margin:0;text-transform:uppercase; }
+.hover_border_bottom:after {
+  display:block;
+  content: '';
+  border-bottom: solid 3px #b11313;  
+  transform: scaleX(0);  
+  transition: transform 250ms ease-in-out;
+}
+.hover_border_bottom:hover:after { transform: scaleX(1); }
+.hover_border_bottom.fromRight:after{ transform-origin:100% 50%; }
+.hover_border_bottom.fromLeft:after{  transform-origin:  0% 50%; }
+
+.nav-item{
+color: #b11313 !important;
+}
+.nav-item:hover,.nav-item:active{
+color: #ea1616 !important;
+}
