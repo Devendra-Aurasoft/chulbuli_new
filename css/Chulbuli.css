@@ -1,59 +1,74 @@
-.LOGO_IMG{
+.LOGO_IMG {
     width: 100px;
 }
-.bg_red{
+
+.bg_red {
     background-color: #b11313 !important;
 }
-.text_red{
+
+.text_red {
     color: #b11313 !important;
 }
 
-.line_height{
+.line_height {
     line-height: 35px;
     font-family: "Lora", Georgia, serif !important;
 }
-.fs_25{
+
+.fs_25 {
     font-size: 25px;
 }
-.fs_40{
+
+.fs_20 {
+    font-size: 20px;
+}
+
+.fs_40 {
     font-size: 40px !important;
 }
-.font_weight{
+
+.font_weight {
     font-family: "Lora", Georgia, serif;
     font-weight: 600;
     text-align: center;
 }
-.icon{
+
+.icon {
     color: #b11313 !important;
 }
-.ftco-footer-social li a:hover{
+
+.ftco-footer-social li a:hover {
     background-color: #b11313;
 }
-.ftco-footer-social li a:hover .icon{
+
+.ftco-footer-social li a:hover .icon {
     color: #ffffff !important;
 }
-.slider-item{
+
+.slider-item {
     opacity: 0.8 !important;
 }
-.home-slider{
+
+.home-slider {
     background-color: black !important;
 
 }
- .hero-bread{
+
+.hero-bread {
     opacity: 0.8 !important;
 }
-.bg-color{
+
+.bg-color {
     background-color: black !important;
 
 }
-.block-20{
+
+.block-20 {
     background-position: center;
     background-size: cover;
 }
-.ftco-footer{
-    text-align: center;
-}
-.ftco-footer_font{
+
+.ftco-footer_font {
     font-family: "Lora", Georgia, serif !important;
     font-size: 20px !important;
     text-align: center;
@@ -61,39 +76,296 @@
     /* width: 30px; */
     border-Width: 1px 5px
 }
-.ftco-footer_Left{
+
+.ftco-footer_Left {
     text-align: left;
 }
 
 
-h2 { color: #666;display:inline-block; margin:0;text-transform:uppercase; }
+h2 {
+    color: #666;
+    display: inline-block;
+    margin: 0;
+    text-transform: uppercase;
+}
+
 h2:after {
-  display:block;
-  content: '';
-  border-bottom: solid 3px #b11313;  
-  transform: scaleX(0);  
-  transition: transform 250ms ease-in-out;
+    display: block;
+    content: '';
+    border-bottom: solid 3px #b11313;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
 }
-h2:hover:after { transform: scaleX(1); }
-h2.fromRight:after{ transform-origin:100% 50%; }
-h2.fromLeft:after{  transform-origin:  0% 50%; }
+
+h2:hover:after {
+    transform: scaleX(1);
+}
+
+h2.fromRight:after {
+    transform-origin: 100% 50%;
+}
+
+h2.fromLeft:after {
+    transform-origin: 0% 50%;
+}
 
 
-.hover_border_bottom { color: #b11313;display:inline-block; margin:0;text-transform:uppercase; }
+.hover_border_bottom {
+    color: #b11313;
+    display: inline-block;
+    margin: 0;
+    text-transform: uppercase;
+}
+
 .hover_border_bottom:after {
-  display:block;
-  content: '';
-  border-bottom: solid 3px #b11313;  
-  transform: scaleX(0);  
-  transition: transform 250ms ease-in-out;
+    display: block;
+    content: '';
+    border-bottom: solid 3px #b11313;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
 }
-.hover_border_bottom:hover:after { transform: scaleX(1); }
-.hover_border_bottom.fromRight:after{ transform-origin:100% 50%; }
-.hover_border_bottom.fromLeft:after{  transform-origin:  0% 50%; }
 
-.nav-item{
-color: #b11313 !important;
+.hover_border_bottom:hover:after {
+    transform: scaleX(1);
 }
-.nav-item:hover,.nav-item:active{
-color: #ea1616 !important;
+
+.hover_border_bottom.fromRight:after {
+    transform-origin: 100% 50%;
+}
+
+.hover_border_bottom.fromLeft:after {
+    transform-origin: 0% 50%;
+}
+
+.nav-item {
+    color: #b11313 !important;
+}
+
+.nav-item:hover,
+.nav-item:active {
+    color: #ea1616 !important;
+}
+
+.flip_card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease-in-out;
+    z-index: 1;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.flip_card .product,
+.flip_card .Product_text {
+    display: block;
+    width: 100%;
+    z-index: 1;
+    background-color: #ffffff;
+    text-align: center;
+    align-items: center;
+    backface-visibility: hidden;
+    /* margin-bottom: 30px; */
+    position: absolute;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    border: 1px solid #f0f0f0;
+}
+
+.Product{
+    height: 450px;
+}
+.Product_text{
+    height: 430px;
+}
+
+.Product_text p {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    overflow: scroll;
+    overflow-x: visible;
+}
+
+.flip_card .Product_text {
+    transform: rotateY(180deg);
+
+}
+
+.lable:hover {
+    transform: rotateY(2deg);
+}
+
+label {
+    width: 100%;
+    padding: 10px;
+    background-color: #b11313;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* .ftco-animate {
+    height: 550px;
+} */
+.New_card_class {
+    height: 550px;
+}
+
+.checkbox {
+    display: none;
+}
+
+#input {
+    /* display: none; */
+    width: 100%;
+    z-index: 2;
+}
+
+.fw_400 {
+    font-weight: 400;
+}
+
+:checked+.flip_card {
+    transform: rotateY(180deg) !important;
+}
+
+.label:hover :checked+.flip_card {
+    transform: rotateY(175deg) !important;
+}
+
+
+.product_close {
+    background-color: #b11313;
+    color: #ffffff !important;
+    padding: 5px 10px;
+    /* border-radius: 20px; */
+}
+
+.fs_16 {
+    font-size: 16px;
+}
+
+#Seedless_tamarind_F:hover {
+    content: url('../chulbuliImg/Seedless_tamarind_B.jpeg') !important;
+}
+
+.posterBG {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text_white {
+    color: #ffffff !important;
+}
+
+.width_box {
+    width: 500px;
+}
+
+.whatsapp_button .float {
+    align-items: center;
+    border-radius: 50px;
+    bottom: 3%;
+    display: flex;
+    font-size: 40px;
+    height: 60px;
+    justify-content: center;
+    padding-bottom: 15px;
+    position: fixed;
+    right: 3%;
+    text-align: center;
+    width: 60px;
+    z-index: 100;
+}
+
+.whatsapp_button img {
+    font-size: 40px;
+    height: 60px;
+}
+@media (max-width: 1200px) {
+    .New_card_class {
+        height: 450px;
+    }
+    .Product_text{
+        align-items: center !important;
+        height: 360px;
+        justify-content: center;
+        text-align: center;
+    }
+}
+@media (max-width: 768px) {
+    .New_card_class {
+        height: 500px;
+    }
+    .Product_text{
+        align-items: center !important;
+        height: 410px;
+        justify-content: center;
+        text-align: center;
+    }
+}
+@media (max-width: 556px) {
+    .New_card_class {
+        height:950px;
+    }
+    .Product_text{
+        align-items: center !important;
+        height: 850px;
+        justify-content: center;
+        text-align: center;
+    }
+    .Product_text p{
+        padding: 100px;
+     align-items: center;
+    }
+}
+@media (max-width: 425px) {
+    .whatsapp_button img {
+        font-size: 40px;
+        height: 45px;
+    }
+    .flip_card{
+       height:  100%;
+    }
+    .New_card_class {
+        height: 730px;
+    }
+    .Product{
+        height: 450px;
+    }
+    .Product_text{
+        align-items: center !important;
+        height: 88%;
+        justify-content: center;
+        text-align: center;
+    }
+    .Product_text p {
+        padding: 20px;
+        display: flex;
+      align-items: center;
+    }
+}
+@media (max-width: 375px) {
+    .New_card_class {
+        height: 650px;
+    }
+    .Product_text{
+        height: 85%;
+    }
+}
+@media (max-width:320px) {
+    .New_card_class {
+        height: 550px;
+    }
+    .Product_text{
+        height: 85%;
+    }
 }
