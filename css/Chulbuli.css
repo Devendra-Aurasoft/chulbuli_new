@@ -290,6 +290,9 @@ label {
     font-size: 40px;
     height: 60px;
 }
+.black_text{
+    color: #0e0b0b;
+}
 @media (max-width: 1200px) {
     .New_card_class {
         height: 450px;
@@ -325,6 +328,12 @@ label {
     .Product_text p{
         padding: 100px;
      align-items: center;
+    }
+    .box_height{
+       height:  400px !important
+    }
+    .posterBGimg{
+        background-position: left;
     }
 }
 @media (max-width: 425px) {
